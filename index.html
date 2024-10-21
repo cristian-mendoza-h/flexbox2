@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin : 0;
+        }
+        
+        .contenedor-flexible{
+            background-color: grey;
+            height: 500px;
+            display : flex;
+            flex-direction: row;
+            justify-content: flex-start; /*para mover los valores que van en el eje principal*/
+            align-items: flex-end; /*para mover los valores que van en el eje transversal*/ 
+            flex-wrap : wrap;  /*Para que los valores no colapsen y estos bajen para que no esten apliados de derecha a izquierda*/
+            align-content: flex-start;
+        }
+
+        .cf{
+            display: flex;
+            height: 398px;
+        }
+
+        .cf1{
+            display: flex;
+            width: 450px;
+        }
+
+        .cf2{
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+        }
+
+        .ef1{
+            background-color: red;
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .ef2{
+            background-color: rebeccapurple;
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .ef3{
+            background-color: green;
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .elemento-flexible
+        {
+            font-size: 5rem; /*hace crecer el valor*/
+            color: white;
+        }
+
+        .uno, .seis{
+            background-color: red;
+            /*width : 150px;*/
+            flex-basis: 150px; /*Determina lo largo del elemento a lo largo del eje principal, puede ser ancho o alto dependiendo del eje*/
+            flex-grow: 1; /*Para que el elemnto crezca o incremente mientras exista espacio en el eje principal*/
+            flex-shrink: 1; /*Para que el elemnto decrezca o decremente mientras haya menos espacio en el eje principal*/
+            height : 150px;
+        }
+
+        .dos, .siete{
+            background-color: blue;
+            /*width : 150px;*/
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 1;
+            height : 150px;
+        }
+
+        .tres, .ocho{
+            background-color: violet;
+            /*width : 150px;*/
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            height : 150px;
+        }
+
+        .cuatro{
+            background-color: aqua;
+            /*width : 150px;*/
+            flex-basis: 150px;
+            height : 150px;
+        }
+
+        .cinco{
+            background-color: greenyellow;
+            /*width : 150px;*/
+            flex-basis: 150px;
+            height : 150px;
+        }
+    </style>
+</head>
+<body>
+    <!--<div class = "contenedor-flexible">
+        <div class = "elemento-flexible uno">1</div>
+        <div class = "elemento-flexible dos">2</div>
+        <div class = "elemento-flexible tres">3</div>
+        <div class = "elemento-flexible cuatro">4</div>
+        <div class = "elemento-flexible cinco">5</div>
+        <div class = "elemento-flexible seis">6</div>
+        <div class = "elemento-flexible siete">7</div>
+        <div class = "elemento-flexible ocho">8</div>
+    </div>-->
+        <div class = "cf">
+            <div class = "cf1">
+                <div class = "ef1">1</div>
+            </div>
+            <div class = "cf2">
+                <div class = "ef2">2</div>
+                <div class = "ef3">3</div>
+            </div>
+        </div>
+            
+        </div>
+    </div>
+</body>
+</html>
